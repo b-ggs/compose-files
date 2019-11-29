@@ -2,17 +2,22 @@
 
 import os
 import sys
+from shutil import which
 
 def print_help():
     sys.stderr.write('Usage:\n')
-    sys.stderr.write(f"  {sys.argv[0]} dir up|down\n")
+    sys.stderr.write(f"  {sys.argv[0]} [DIR] [up|down]\n")
 
-if len(sys.argv) < 3:
+if not len(sys.argv) == 3:
     print_help()
     exit(1)
 
 compose_dir = os.path.realpath(sys.argv[1])
 compose_command = sys.argv[2]
+
+if which('docker-compose') is None:
+    sys.stderr.write('docker-compose is not installed or not in PATH.\n')
+    exit(1)
 
 if not os.path.exists(compose_dir):
     sys.stderr.write(f"{compose_dir} does not exist.\n")
