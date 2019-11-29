@@ -1,0 +1,7 @@
+version: "3.7"
+services:
+  transmission:
+    volumes:
+      - /path/to/config:/config
+      - /path/to/downloads:/downloads
+      - /path/to/watch:/watch
