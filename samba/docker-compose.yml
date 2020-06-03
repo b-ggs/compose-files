@@ -4,7 +4,10 @@ services:
     image: dperson/samba
     container_name: samba
     environment:
-      - TZ=Asia/Manila
+      - RECYCLE=false
     ports:
       - 139:139
       - 445:445
+    restart: unless-stopped
+    healthcheck:
+      disable: true
