@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  samba:
+    image: dperson/samba
+    container_name: samba
+    environment:
+      - TZ=Asia/Manila
+    ports:
+      - 139:139
+      - 445:445
