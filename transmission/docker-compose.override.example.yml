@@ -3,5 +3,6 @@ services:
   transmission:
     volumes:
       - /path/to/config:/config
-      - /path/to/downloads:/downloads
+      - /path/to/downloads/complete:/downloads/complete
+      - /path/to/downloads/incomplete:/downloads/incomplete
       - /path/to/watch:/watch
