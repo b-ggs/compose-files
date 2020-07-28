@@ -1,17 +1,17 @@
 version: "3.7"
 services:
   pihole:
-    container_name: pihole
     image: pihole/pihole
-    ports:
-      - 53:53/tcp
-      - 53:53/udp
-      - 67:67/udp
-      - 80:80/tcp
-      - 443:443/tcp
+    container_name: pihole
     environment:
       - TZ=Asia/Manila
       - WEBPASSWORD=piholepassword
+    ports:
+      - 53:53
+      - 53:53/udp
+      - 67:67/udp
+      - 80:80
+      - 443:443
     volumes:
       - pihole-etc-pihole:/etc/pihole
       - pihole-etc-dnsmasq-d:/etc/dnsmasq.d
