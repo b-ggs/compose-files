@@ -1,0 +1,4 @@
+version: "3.8"
+services:
+  samba:
+    command: -s "Seagate;/mnt/seagate;yes;no;no;all;boggs;Boggs;samba" -u "boggs;samba" -p
