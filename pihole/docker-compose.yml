@@ -1,11 +1,9 @@
-version: "3.7"
+version: "3.8"
 services:
   pihole:
     image: pihole/pihole
     container_name: pihole
-    environment:
-      - TZ=Asia/Manila
-      - WEBPASSWORD=piholepassword
+    env_file: .env
     ports:
       - 53:53
       - 53:53/udp

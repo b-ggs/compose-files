@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  transmission:
+    volumes:
+      - /host/path/to/config:/config
+      - /host/path/to/downloads/complete:/downloads/complete
+      - /host/path/to/downloads/incomplete:/downloads/incomplete
+      - /host/path/to/watch:/watch

@@ -1,8 +1,9 @@
-version: "3.7"
+version: "3.8"
 services:
   transmission:
     image: linuxserver/transmission
     container_name: transmission
+    env_file: .env
     environment:
       - PUID=1000
       - PGID=1000
