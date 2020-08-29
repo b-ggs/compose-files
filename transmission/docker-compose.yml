@@ -4,10 +4,6 @@ services:
     image: linuxserver/transmission
     container_name: transmission
     env_file: .env
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Asia/Manila
     ports:
       - 9091:9091
       - 51413:51413
