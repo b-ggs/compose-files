@@ -11,3 +11,4 @@ services:
     restart: unless-stopped
     dns:
       - 1.1.1.1
+    healthcheck: {}
