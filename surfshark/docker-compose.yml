@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   surfshark:
-    image: ilteoood/docker-surfshark
+    image: bxggs/surfshark
     container_name: surfshark
     env_file: .env
     cap_add:
@@ -11,4 +11,3 @@ services:
     restart: unless-stopped
     dns:
       - 1.1.1.1
-    healthcheck: {}
