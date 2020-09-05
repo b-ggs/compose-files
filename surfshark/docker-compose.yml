@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  surfshark:
+    image: ilteoood/docker-surfshark
+    container_name: surfshark
+    env_file: .env
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - /dev/net/tun
+    restart: unless-stopped
+    dns:
+      - 1.1.1.1
