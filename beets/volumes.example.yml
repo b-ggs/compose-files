@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  beets:
+    volumes:
+      - /host/path/to/appdata/config:/config
+      - /host/path/to/music/library:/music
+      - /host/path/to/ingest:/downloads

@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  beets:
+    image: linuxserver/beets
+    container_name: beets
+    env_file: .env
+    ports:
+      - 8337:8337
+    restart: unless-stopped
