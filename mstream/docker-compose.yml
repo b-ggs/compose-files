@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  mstream:
+    image: linuxserver/mstream
+    container_name: mstream
+    env_file: .env
+    ports:
+      - 8337:8337
+    restart: unless-stopped

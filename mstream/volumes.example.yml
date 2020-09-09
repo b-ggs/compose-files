@@ -1,0 +1,6 @@
+version: "3.8"
+services:
+  mstream:
+    volumes:
+      - /path/to/music:/music
+      - /path/to/config:/config
