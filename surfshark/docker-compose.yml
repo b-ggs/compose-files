@@ -11,3 +11,9 @@ services:
     restart: unless-stopped
     dns:
       - 1.1.1.1
+  surfshark-ip-printer:
+    image: curlimages/curl
+    container_name: surfshark-ip-printer
+    command: while true; do echo "$(date) --- $(curl -s https://api.ipify.org)"; sleep 1800; done
+    restart: unless-stopped
+    network_mode: service:surfshark
