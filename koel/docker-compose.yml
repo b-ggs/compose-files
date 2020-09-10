@@ -12,6 +12,6 @@ services:
     depends_on:
       - koel-database
   koel-database:
-    image: mysql:5.7
+    image: mysql/mysql-server:5.7
     container_name: koel-database
     env_file: .env
