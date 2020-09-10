@@ -11,7 +11,7 @@ services:
       - DB_HOST=koel-database
     depends_on:
       - koel-database
-  koel-database:
-    image: mysql/mysql-server:5.7
+  koel-mariadb:
+    image: mariadb
     container_name: koel-database
     env_file: .env
