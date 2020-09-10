@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  koel:
+    volumes:
+      - /path/to/music:/music
+      - /path/to/covers:/var/www/html/public/img/covers
+  koel-database:
+    volumes:
+      - /path/to/mysql/data:/var/lib/mysql
