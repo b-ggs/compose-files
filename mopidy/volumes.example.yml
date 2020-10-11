@@ -1,0 +1,6 @@
+version: "3.8"
+services:
+  mopidy:
+    volumes:
+      - /path/to/media:/var/lib/mopidy/media:ro
+      - /path/to/local:/var/lib/mopidy/local

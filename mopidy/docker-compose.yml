@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  mopidy:
+    image: wernight/mopidy
+    container_name: mopidy
+    ports:
+      - 6600:6600
+      - 6680:6680
+    restart: unless-stopped
