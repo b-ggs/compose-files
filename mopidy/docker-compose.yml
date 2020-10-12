@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   mopidy:
-    image: wernight/mopidy
+    image: bxggs/mopidy
     container_name: mopidy
     ports:
       - 6600:6600
