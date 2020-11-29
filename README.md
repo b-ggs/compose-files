@@ -2,11 +2,13 @@
 
 🐳 collection of docker-compose files
 
+## Requirements
+
+* Docker Engine
+* Docker Compose
+
 ## Usage
 
-```bash
-bin/compose_wrapper [DIR] [up|down]
+Use `${APP_NAME}/bin/up` to spin up the app and `${APP_NAME}/bin/down` to shut it down, ex. `pihole/bin/up` and `pihole/bin/down`
 
-# ex.
-bin/compose_wrapper ./transmission up
-```
+Some apps may require additional configuration. See the example files in each of the app directories.
