@@ -1,0 +1,13 @@
+{
+    "admins": ["boggsbot"],
+    "logsDirectory": "/logs",
+    "adminAPIKey": "justlogpassword",
+    "username": "boggsbot",
+    "oauth": "oauthtokenforchat",
+    "clientID": "mytwitchclientid",
+    "clientSecret": "mysecret",
+    "logLevel": "info",
+    "channels": [],
+    "archive": true,
+    "channelConfigs": {}
+}
