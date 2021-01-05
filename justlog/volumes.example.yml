@@ -2,5 +2,5 @@ version: "3.8"
 services:
   justlog:
     volumes:
-      - justlog.json:/etc/justlog.json
+      - ./justlog.json:/etc/justlog.json
       - /path/to/logs:/logs
