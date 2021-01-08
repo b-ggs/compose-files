@@ -1,12 +1,12 @@
 version: "3.8"
 services:
-  server:
+  orl-server:
     image: bxggs/orl-server
     container_name: orl-server
     ports:
       - 8080:8080
     restart: unless-stopped
-  logger:
+  orl-logger:
     image: bxggs/orl-logger
     container_name: orl-logger
     restart: unless-stopped
