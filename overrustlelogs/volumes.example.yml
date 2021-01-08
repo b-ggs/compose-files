@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  server:
+    volumes:
+      - /path/to/logs:/logs:ro
+  logger:
+    volumes:
+      - /path/to/logs:/logs
