@@ -7,10 +7,9 @@ services:
       - 8080:8080
     restart: unless-stopped
   logger:
-    build: bxggs/orl-logger
+    image: bxggs/orl-logger
     container_name: orl-logger
     restart: unless-stopped
     volumes:
       - ./overrustlelogs.toml:/logger/overrustlelogs.toml
       - ./channels.json:/logger/channels.json
-      - ${LOGS_PATH}:/logs
