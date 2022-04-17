@@ -1,8 +1,0 @@
-version: "3.8"
-services:
-  justlog:
-    image: bxggs/justlog-git
-    container_name: justlog
-    ports:
-      - 8025:8025
-    restart: unless-stopped

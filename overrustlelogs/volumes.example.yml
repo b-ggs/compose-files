@@ -1,8 +1,0 @@
-version: "3.8"
-services:
-  orl-server:
-    volumes:
-      - /path/to/logs:/logs:ro
-  orl-logger:
-    volumes:
-      - /path/to/logs:/logs
