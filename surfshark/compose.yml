@@ -1,4 +1,3 @@
-version: "3.8"
 services:
   surfshark:
     image: bxggs/surfshark
@@ -11,6 +10,7 @@ services:
     restart: unless-stopped
     dns:
       - 1.1.1.1
+
   surfshark-ip-printer:
     image: curlimages/curl
     container_name: surfshark-ip-printer

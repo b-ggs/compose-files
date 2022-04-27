@@ -1,15 +1,14 @@
-version: "3.8"
 services:
   pihole:
     image: pihole/pihole
     container_name: pihole
     env_file: .env
     ports:
-      - 53:53
-      - 53:53/udp
-      - 67:67/udp
-      - 80:80
-      - 443:443
+      - "53:53"
+      - "53:53/udp"
+      - "67:67/udp"
+      - "80:80"
+      - "443:443"
     volumes:
       - pihole-etc-pihole:/etc/pihole
       - pihole-etc-dnsmasq-d:/etc/dnsmasq.d
@@ -19,6 +18,7 @@ services:
     cap_add:
       - NET_ADMIN
     restart: unless-stopped
+
 volumes:
   pihole-etc-pihole:
     name: pihole-etc-pihole
