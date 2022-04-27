@@ -3,7 +3,7 @@
 from os import path, execvp
 
 compose_dir = path.dirname(path.dirname(path.realpath(__file__)))
-compose_file_path = path.join(compose_dir, 'docker-compose.yml')
+compose_file_path = path.join(compose_dir, 'compose.yml')
 volumes_file_path = path.join(compose_dir, 'volumes.yml')
 
 cmd = 'docker-compose'
