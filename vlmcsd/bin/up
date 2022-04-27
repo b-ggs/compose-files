@@ -5,7 +5,7 @@ from os import path, execvp
 compose_dir = path.dirname(path.dirname(path.realpath(__file__)))
 compose_file_path = path.join(compose_dir, 'compose.yml')
 
-cmd = 'docker-compose'
-args = [cmd, '-f', compose_file_path, 'up', '-d']
+cmd = "docker"
+args = [cmd, "compose", '-f', compose_file_path, 'up', '-d']
 
 execvp(cmd, args)
